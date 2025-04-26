@@ -6,9 +6,11 @@ const pink = document.getElementById('pink');
 const yellow = document.getElementById('yellow');
 const container = document.getElementById('container');
 const loader = document.getElementById('loader');
+const loader2 = document.getElementById('loader2');
 const umbrella = document.getElementById('umbrella');
 const displayLogo = document.getElementById('displayLogo');
 const loaderPath = document.getElementById('loaderpath');
+const uploaderIcon = document.getElementById('uploaderIconsvg');
 
 let isUploaded = false; // file uploaded or not check flag 
 let currentColor = "blue"; // currentColor color flag to update active color
@@ -57,7 +59,9 @@ yellow.addEventListener('click',()=>{
 const loadingScreen = (newUmbrellaImage) => {
     // loading is marked as true to avoid any other listener getting triggered before this...
     isLoading= true;
+    uploaderIcon.style.display = 'none';
     loader.style.display = 'block'
+    loader2.style.display = 'block'
     umbrella.style.display = 'none'
     displayLogo.style.display = 'none'
     displayLogo.classList.remove('showUmbrella')
@@ -66,7 +70,9 @@ const loadingScreen = (newUmbrellaImage) => {
         loader.style.display = 'none'
         umbrella.style.display = 'block'
         umbrella.className = 'showUmbrella'
-        if(isUploaded){ // this will only be set as block if file is uploaded
+        uploaderIcon.style.display = 'block';
+        loader2.style.display = 'none'
+        if(isUploaded){ // this will only be set as block ifup is uploaded
             displayLogo.style.display = 'block'
             displayLogo.className = 'showUmbrella'
         }

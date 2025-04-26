@@ -230,9 +230,6 @@ h2, p ,small{
         padding:0;
         margin:0;
     }
-    .uploader{
-        width: 10rem;
-    }
     .SelectedIcon{
         height: 2.5rem;
         width: 6rem;
@@ -240,7 +237,7 @@ h2, p ,small{
         overflow: visible;
     }
     .uploaderIcon{
-        right: 1rem;
+        right: 3.5rem;
     }
 }
 /* @media only screen and (max-width:1090px) {
@@ -260,6 +257,9 @@ h2, p ,small{
 } */
 /* tablets and phones  */
 @media only screen and (max-width:768px) {
+    .uploaderIcon{
+        right: 3rem;
+    }
     .container{
         flex-direction: column;
     }
