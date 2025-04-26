@@ -6,12 +6,11 @@ const pink = document.getElementById('pink');
 const yellow = document.getElementById('yellow');
 const container = document.getElementById('container');
 const loader = document.getElementById('loader');
-const loader2 = document.getElementById('loader2');
+const loader2 = document.getElementById('loader2'); // loader to display instead of upload_icon svg
 const umbrella = document.getElementById('umbrella');
 const displayLogo = document.getElementById('displayLogo');
 const loaderPath = document.getElementById('loaderpath');
-const uploaderIcon = document.getElementById('uploaderIconsvg');
-
+const uploaderIcon = document.getElementById('uploaderIconsvg'); // upload_icon.svg
 let isUploaded = false; // file uploaded or not check flag 
 let currentColor = "blue"; // currentColor color flag to update active color
 let isLoading = false; // loading flag to avoid triggering any other function before once this is active
