@@ -11,14 +11,14 @@ const displayLogo = document.getElementById('displayLogo');
 const loaderPath = document.getElementById('loaderpath');
 
 let isUploaded = false; // file uploaded or not check flag 
-let current = "blue"; // current color flag to update active color
+let currentColor = "blue"; // currentColor color flag to update active color
 let isLoading = false; // loading flag to avoid triggering any other function before once this is active
 
 // handling color clicks 
 blue.addEventListener('click',()=>{
      // if loading is true or someone tries to click on the same color it'll return avoiding redundant reloads... 
-    if(isLoading || current == "blue") return;
-    current = "blue";
+    if(isLoading || currentColor == "blue") return;
+    currentColor = "blue";
     blue.className = " color-boxes bg-blue-active"
     yellow.className = "color-boxes bg-yellow"
     pink.className = "color-boxes bg-pink"
@@ -29,8 +29,8 @@ blue.addEventListener('click',()=>{
     loadingScreen('./assets/Blue_umbrella.png');
 })
 pink.addEventListener('click',()=>{
-    if(isLoading || current == "pink") return;
-    current = "pink";
+    if(isLoading || currentColor == "pink") return;
+    currentColor = "pink";
     pink.className = "color-boxes bg-pink-active"
     yellow.className = "color-boxes bg-yellow"
     blue.className = "color-boxes bg-blue"
@@ -41,8 +41,8 @@ pink.addEventListener('click',()=>{
     loadingScreen('./assets/Pink_umbrella.png');
 })
 yellow.addEventListener('click',()=>{
-    if(isLoading || current == "yellow") return;  
-    current = "yellow";
+    if(isLoading || currentColor == "yellow") return;  
+    currentColor = "yellow";
     yellow.className = "color-boxes bg-yellow-active"
     blue.className = "color-boxes bg-blue"
     pink.className = "color-boxes bg-pink"

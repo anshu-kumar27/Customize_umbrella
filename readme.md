@@ -1,31 +1,41 @@
 ## **Structure of this project**
+This is purely done by using HTML, CSS and javascript in this we can add a logo on the umbrella's bottom it has responsive ui and dynamic value updates.
 
 ---
 
 ## **html : document structure**
     
-consists of 2 sections left and right - initially divided into 2 sections of screen for larger screen's(flex-row), but for the smaller sections it'll be from top to bottom (flex-column)
+1. The layout consists of 2 section left and right.
+
+2. On larger screens, the layout uses flex-row.
+
+3. On smaller screens, it uses flex-column.
 
 ---
 
 ## **css : has 3 sections** 
     
-1. classnames (applying styles on the classes listed in html)
+1. Class based styling; styles are applied on the basis of class name provided {explicit classes}.
 
-2. animations : animation section where i have applied animation on loader icon - svg and umbrella to show with a fade in effect
+2. Animations : Includes animations like - loading spinner (loader_icon.svg) & Fade-in Effect for umbrella image.
 
-3. generic classes to use anywhere anytime
+3. Created generic reusable classes for colors (use anywhere anytime) :D.
 
 ---
 
 ## **script : has all the dynamic logic** 
     
-1. starting from finding all the elements via "id"
+1. Starting from finding all the targeted dynamic values via "id".
 
-2. setting up flags to avoid wrong displays; active color; and triggering something else while something is in pipline working (loading)
+2. Flags to manage states such as: active color (flag name : currentColor), loading (flag name : isLoading), uploaded (flag name :isUploaded)
     
-3. color active and file umbrella color changing section according to the selection
+3. Color selection and umbrella update : according to the selected color the umbrella is updated with background color, upload button and loader svg color.
     
-4. loading function this helps all the things dynamically change via showing a loading screen
+4. Loading function : displays a loader whenever a event is triggered ... 
     
-5. file upload logic: there are checks for png/jpg image uploads and to avoid any file greater than 5mb being loaded for both of these checks if failed a warning trigger will occur , and if successfully uploaded file will be marked as isUploaded ~true in our flag aswell and loading will be initiated to display the logo.
+5. File upload logic : Validates file type (.png and .jpg) and size must be below 5MB. It shows alert if validation fails and if it succeeds then the upload flag is set as true triggering loading screen and updating umbrella. 
+
+## **Screen-Shots**
+![ss1](./assets/ss1.png)
+![ss2](./assets/ss2.png)
+![ss3](./assets/ss3.png)
