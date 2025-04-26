@@ -1,0 +1,214 @@
+/* to avoid the default margin given by browser */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* container sets the direction */
+.container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    filter:contrast(80%);
+}
+
+/* left and right are the 2 sections which are divided we are using 50% each to divide them*/
+.left, .right{
+    margin: 1rem;
+    height: auto;
+    width: 50%;
+}
+
+
+/* handling left */
+.left{
+    justify-content: center;
+}
+.left img{
+    height: 21rem;
+}
+
+.SelectedIcon{
+    /* handling uploaded image */
+    position: relative;
+    top: 17rem;
+    right: 15rem;
+    height: 2rem;
+    width: 6rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#displayLogo{
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* handling right */
+.right{
+    justify-content: start;
+}
+
+.uploader{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    color: white;
+    height: 2rem;
+    padding: 0.5rem;
+    width: 27rem;
+    cursor: pointer;
+}
+
+.uploaderIcon{
+    position: relative;
+    top:2rem;
+    right: 0.5rem;
+}
+
+.right button{
+        padding: 0.5rem;
+        width: 25rem;
+        border-width: 0;
+        height: 3rem;
+        cursor: pointer;
+}
+
+
+/* circle boxes */
+.color-boxes{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    border-width: 1rem solid black;
+    margin: 1rem 0.5rem 1rem 0rem;
+
+}
+
+
+/* screen sizes  */
+
+
+
+
+/* animation for the loader and showing umbrella*/
+.loader{
+    width: 10rem;
+    animation: spin 3s linear infinite ;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.showUmbrella{
+    opacity: 0;
+    animation : umbrellaChange 2s ease-in-out forwards;
+}
+
+@keyframes umbrellaChange {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+/* making generic class names  */
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center; 
+}
+
+
+
+h1{
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+}
+h2, p ,small{
+    margin: 0;
+    padding-top: 0.5rem;
+}
+
+.bg-blue-100{
+    background-color: #e5ecf0;
+}
+
+.bg-yellow-100{
+    background-color: rgb(255, 255, 239);
+}
+
+
+.bg-pink-100{
+    background-color: rgb(254, 250, 251);
+}
+
+.bg-blue{
+    background-color: #37a6cf;
+}
+.bg-blue-active{
+    background-color: #37a6cf;
+    border: 5px solid #a5ebeb;
+    transform: translate(0px, -4px);
+}
+
+.bg-yellow{
+    background-color: #cead47;
+}
+.bg-yellow-active{
+    background-color: #cead47;
+    border: 5px solid #f5ff61;
+    transform: translate(0px, -4px);
+}
+
+.bg-pink{
+    background-color: #c53a84;
+}
+.bg-pink-active{
+    background-color: #c53a84;
+    border: 5px solid #ffb2f5;
+    transform: translate(0px, -4px);
+}
+
+
+.svg-yellow svg{
+    fill: #cead47;
+}
+.svg-pink svg{
+    fill: #c53a84;
+}
+.svg-blue path{
+    fill: #37a6cf;
+}
+
+.svg-white{
+    fill:#ffffffbf
+}
