@@ -272,9 +272,15 @@ h2, p ,small{
     h1{
         font-size: 1.5rem;
     }
-    h2, p ,small{
+    h2{
         margin: 0;
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    small{
+        font-size: 0.6rem;
     }
     .left img{
         height: 50%;
@@ -285,6 +291,43 @@ h2, p ,small{
         width: 3rem;
         top: -4rem;
         overflow: visible;
+    }
+    #displayLogo {
+        object-fit: contain;
+        object-position: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .uploaderIcon{
+        right: 3rem;
+    }
+    .uploader{
+        width: 12rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    h2{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    small{
+        font-size: 0.6rem;
+    }
+    .left img{
+        height: 45%;
+        width: 100%;
+    }
+    .SelectedIcon{
+        height: 2rem;
+        width: 3rem;
+        top: -4rem;
     }
     #displayLogo {
         object-fit: contain;
