@@ -1,10 +1,14 @@
-**structure**
+## **Structure of this project**
 
-->html : document structure
+---
+
+## **html : document structure**
     
 consists of 2 sections left and right - initially divided into 2 sections of screen for larger screen's(flex-row), but for the smaller sections it'll be from top to bottom (flex-column)
 
-css : has 3 sections 
+---
+
+## **css : has 3 sections** 
     
 1. classnames (applying styles on the classes listed in html)
 
@@ -12,7 +16,9 @@ css : has 3 sections
 
 3. generic classes to use anywhere anytime
 
-->script : has all the dynamic logic 
+---
+
+## **script : has all the dynamic logic** 
     
 1. starting from finding all the elements via "id"
 
