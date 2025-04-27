@@ -111,11 +111,14 @@ body{
     40%{
         transform: rotate(360deg);
     }
-    60%{
+    50%{
         transform: rotate(400deg);
     }
-    100%{
+    90%{
         transform: rotate(760deg);
+    }
+    100%{
+        transform: rotate(800deg);
     }
 
 }
@@ -302,7 +305,7 @@ h2, p ,small{
 
 @media only screen and (max-width:430px) {
     .uploaderIcon{
-        right: 3rem;
+        right: 2rem;
     }
     .uploader{
         width: 12rem;

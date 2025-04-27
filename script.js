@@ -84,6 +84,7 @@ const loadingScreen = (newUmbrellaImage) => {
 
 // handling uploads 
 fileUploadIcon.addEventListener('click',()=>{
+    if(isLoading) return; // avoiding re-uploads while image is being loaded ... 
     fileUpload.click();
 })
 
